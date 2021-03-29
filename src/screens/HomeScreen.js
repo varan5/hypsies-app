@@ -7,21 +7,21 @@ import {
   SafeAreaView,
   Image,
 } from "react-native";
+import Title from "../components/Title";
 import IconClick from "../components/IconClick";
 import Logo from "../components/Logo";
+import StartGame from "../components/StartGame";
 import StartImage from "../components/StartImage";
 
 const HomeScreen = ({ navigation }) => {
   StatusBar.setHidden(true);
   return (
     <View>
+      <Title text="Who are we ?" />
       <View style={styles.gapMaker} />
       <View style={styles.logoImageContainer}>
         <Logo navigation={navigation} />
-        <Image
-          source={require("../../assets/enjoying.gif")}
-          style={styles.imageStyle}
-        />
+        <StartGame navigation={navigation} />
       </View>
       <StartImage navigation={navigation} />
       <View style={styles.iconsContainer}>

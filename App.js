@@ -5,6 +5,7 @@ import HomeScreen from './src/screens/HomeScreen'
 import KnowMoreScreen from './src/screens/know-more/KnowMoreScreen';
 import DetailScreen from './src/screens/details/DetailScreen'
 import LifeWithHypsiesScreen from './src/screens/details/life-with-hypsies/LifeWithHypsiesScreen';
+import GameScreen from './src/screens/game/GameScreen'
 
 const navigator = createStackNavigator(
   {
@@ -12,6 +13,7 @@ const navigator = createStackNavigator(
     KnowMore: KnowMoreScreen,
     Detail: DetailScreen,
     LifeWithHypsies: LifeWithHypsiesScreen,
+    Game: GameScreen,
 
   },
   {
